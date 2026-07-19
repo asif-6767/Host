@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: marco-bot-host
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TOKEN
+        value: 8223450847:AAEyy8NVTWqgOj8FtW_SYch7jPK7bDTv-Yw
+      - key: OWNER_ID
+        value: 8399018550
+      - key: ADMIN_ID
+        value: 8399018550
+      - key: YOUR_USERNAME
+        value: testtgfh
+      - key: UPDATE_CHANNEL
+        value: testtgfh
